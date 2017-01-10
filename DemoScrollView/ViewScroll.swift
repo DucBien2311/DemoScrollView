@@ -71,6 +71,12 @@ class ViewScroll: UIViewController {
         return photo
     }
     
+    
+    @IBAction func sldZoom(sender: UISlider) {
+        scrollView.setZoomScale(CGFloat(sender.value), animated: true)
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

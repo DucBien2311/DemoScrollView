@@ -24,10 +24,19 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="3Sh-P4-9l3"/>
                                 </connections>
                             </scrollView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="n8e-Oy-ysJ">
+                                <rect key="frame" x="18" y="562" width="564" height="31"/>
+                                <connections>
+                                    <action selector="sldZoom:" destination="BYZ-38-t0r" eventType="valueChanged" id="c7P-3O-AlL"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="n8e-Oy-ysJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9cl-8o-57a"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="n8e-Oy-ysJ" secondAttribute="bottom" constant="8" id="Clh-mS-hec"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="giq-FN-Q6c" secondAttribute="bottom" constant="88" id="JFB-wu-mM1"/>
+                            <constraint firstItem="n8e-Oy-ysJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="RHh-OP-VAO"/>
                             <constraint firstItem="giq-FN-Q6c" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iHT-Ne-4DI"/>
                             <constraint firstItem="giq-FN-Q6c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jDx-s7-1Lz"/>
                             <constraint firstItem="giq-FN-Q6c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nyi-Wd-6TQ"/>
@@ -35,6 +44,7 @@
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="giq-FN-Q6c" id="bIq-Y8-ubl"/>
+                        <outlet property="sldZoom" destination="n8e-Oy-ysJ" id="2pv-pw-W2N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
